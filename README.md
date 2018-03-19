@@ -26,33 +26,6 @@ Deploy the app to Heroku using the deploy button.
 * *SALESFORCE_PASSWORD* - enter the password of the Salesforce integration user
 * *GOOGLE_CHAT_TOKEN* - enter the Google Hangouts Chat token
 
-## Installation with Salesforce DX
-
-Clone the repo to your local file system.
-
-```
-git clone https://github.com/muenzpraeger/salesforce-google-hangouts-chat-apex-webhook
-```
-
-Change into the git repo directory and create a new scratch org.
-
-```
-sfdx force:org:create -a apexWebhook -s -f config/project-scratch-def.json
-```
-
-Push the source to the newly created org.
-```
-sfdx force:source:push
-```
-
-Open the scratch org.
-
-```
-sfdx force:org:open
-```
-
-Create a new version of the _Google Hangouts Chat_ Process Builder flow and update it with a webhook URL of one of your Chat rooms.
-
 ## License
 
-For licensing see the included [license file](https://github.com/muenzpraeger/salesforce-google-hangouts-chat-apex-webhook/blob/master/LICENSE.md).
+For licensing see the included [license file](https://github.com/muenzpraeger/salesforce-google-hangouts-chat-basic-bot/blob/master/LICENSE.md).
